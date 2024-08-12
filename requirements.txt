@@ -1,0 +1,16 @@
+datasets
+numpy
+transformers==4.35
+accelerate==0.24.1
+torch
+peft @ git+https://github.com/huggingface/peft@4df9c5a
+tqdm
+bitsandbytes
+auto-gptq @ git+https://github.com/PanQiWei/AutoGPTQ@v0.2.1
+scipy
+convokit
+backoff
+openai
+# packaging
+# ninja
+# flash-attn

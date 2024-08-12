@@ -1,0 +1,31 @@
+from src.corpora import build, prompt, build_map
+
+if __name__ == '__main__':
+
+    for k in build_map.keys():
+        print(k)
+        x = build(k, 'test')
+        print(k, len(x))
+        # print('Examples')
+        # print(x[1]['input'].replace(' || ', ' || \n')[-5000:])
+        # print('-' * 5)
+        # print('Target', x[1]['target'])
+        # print('-' * 20)
+        # print(x[42]['input'].replace(' || ', ' || \n')[-5000:])
+        # print('-' * 5)
+        # print('Target', x[42]['target'])
+        # print('-' * 20)
+        # print(x[101]['input'].replace(' || ', ' || \n')[-5000:])
+        # print('-' * 5)
+        # print('Target', x[101]['target'])
+        # print(x[101])
+        # print('Hard Prompt')
+        # print(prompt(k))
+        # print('Soft Prompt')
+        # print(prompt(k, proba=True))
+        # print('POS:', sum(xi['target'] == 'Yes' for xi in x) / len(x))
+        # print('Turn Len:', sum([len(xi['input'].split(' || ')) for xi in x]) / len(x))
+        # print('Char Len:', sum([len(xi['input']) for xi in x]) / len(x))
+        # print('Total Train Samples:', len(x))
+        # print('=' * 20)
+        # print('=' * 20)
